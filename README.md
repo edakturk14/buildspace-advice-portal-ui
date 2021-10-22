@@ -1,7 +1,7 @@
 # _buildspace Advice Portal 
 
 UI for _buildspace modified wave project. 
-The contract for the webui can be found here: 
+The contract for the webui can be found here: https://github.com/edakturk14/buildspace-advice-portal-contract
 
 ### Tools:
 - React: build the ui 
