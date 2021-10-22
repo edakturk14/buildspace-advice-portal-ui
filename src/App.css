@@ -1,0 +1,208 @@
+.App {
+  height: 100vh;
+  background-color: black;
+  overflow: scroll;
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-container {
+  padding-top: 30px;
+}
+
+.header {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+.sub-text {
+  font-size: 30px;
+  color: #f5f5f5;
+  font-weight: bold;
+  padding-bottom: 10%; 
+}
+.sub-text-mini {
+  font-size: 20px;
+  color: #f5f5f5;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.message-container {  
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 5px;
+  display: flex;
+  background: -webkit-linear-gradient(left, #780164 30%, #c70eb8 60%);
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.message-text-address {
+  font-size: 15px;
+  color: #ebcde8 ;
+}
+.message-text-mini {
+  font-size: 15px;
+  color: #ebcde8 ;
+  font-weight: bold;
+  font-style: italic;
+}
+.gradient-text {
+  background: -webkit-linear-gradient(left, white 40%, #c70eb8 70%);
+  -webkit-text-stroke: 1px transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.messageBox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 105px;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  outline: none;
+  resize: vertical;
+}
+
+.connect-wallet-button {
+  background: -webkit-linear-gradient(left, #ff6fdf, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+
+}
+
+.site-logo {
+  width: 200px;
+  height: 200px;
+  align-content: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* loader */
+
+.loader {
+  border: 16px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  border-top: 25px solid #ff6fdf;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  position:fixed;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background:white;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
